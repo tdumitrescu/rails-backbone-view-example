@@ -15,6 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+gem "rails-backbone", "~> 0.7.2"
+
 gem "haml-rails", "~> 0.5.1"
 
 gem "gon", "~> 4.1.1"
