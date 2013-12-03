@@ -37,6 +37,9 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    gon (4.1.1)
+      actionpack (>= 2.3.0)
+      json
     haml (4.0.4)
       tilt
     haml-rails (0.5.1)
@@ -116,6 +119,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  gon (~> 4.1.1)
   haml-rails (~> 0.5.1)
   jbuilder (~> 1.2)
   jquery-rails

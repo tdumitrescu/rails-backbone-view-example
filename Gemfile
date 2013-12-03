@@ -17,6 +17,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem "haml-rails", "~> 0.5.1"
 
+gem "gon", "~> 4.1.1"
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
