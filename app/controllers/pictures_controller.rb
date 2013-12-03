@@ -7,6 +7,7 @@ class PicturesController < ApplicationController
     @pics = @user.pictures
     @pic_index = (params[:pic].try(:to_i) || 0) % @pics.size
     @current_pic = @pics[@pic_index]
+    gon.push pics: @pics, picIndex: @pic_index
   end
 
   private
