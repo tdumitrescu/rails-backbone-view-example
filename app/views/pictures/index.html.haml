@@ -1,0 +1,12 @@
+%h1 Pictures by #{@user.name}
+
+%h4
+  Currently viewing:
+  %span#pic-index= @pic_index + 1
+  of #{@pics.size}
+
+= link_to "Next", root_path, id: "next-pic"
+
+#current-pic
+  %h5= @current_pic.name
+  = image_tag @current_pic.url
