@@ -23,6 +23,8 @@ gem "gon", "~> 4.1.1"
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem "haml_coffee_assets", "~> 1.16.0"
+gem "execjs",             "~> 2.0"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -36,6 +38,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'pry'
 end
 
 # Use ActiveModel has_secure_password
