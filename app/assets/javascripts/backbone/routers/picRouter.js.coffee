@@ -5,5 +5,6 @@ class PicApp.Routers.PicRouter extends Backbone.Router
     @currentPicView = new PicApp.Views.PicView
       el:    $("#current-pic")
       model: @pics.at(gon.picIndex)
+    @currentPicView.render()
     
 $ -> window.picRouter = new PicApp.Routers.PicRouter()
