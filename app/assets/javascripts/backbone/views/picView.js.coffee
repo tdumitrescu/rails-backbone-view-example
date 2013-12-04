@@ -1,15 +1,14 @@
 class PicApp.Views.PicView extends Backbone.View
-  
+
   initialize: ->
     @collection = @model.collection
     @index      = @collection.models.indexOf(@model)
     @model      = @model.clone()
     @model.on("change", => @render())
 
-  render: ->
-    @$('#pic-index').text "#{@index + 1}"
-    @$('h5').text @model.get("name")
-    @$('img').attr "src", @model.get("url")
+  template: JST["pic"]
+
+  render: -> @$el.html @template @
 
   events: "click #next-pic": "advancePic"
 

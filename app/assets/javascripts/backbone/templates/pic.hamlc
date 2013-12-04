@@ -1,0 +1,9 @@
+%h4
+  Currently viewing:
+  %span#pic-index= @index + 1
+  of #{@collection.length}
+
+%a#next-pic{:href => "/"} Next
+
+%h5= @model.get("name")
+%img{:src => @model.get("url")}
