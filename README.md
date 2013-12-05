@@ -5,3 +5,21 @@ Three different stages of the dynamic picture-swapping client-side app are avail
 - `jquery`: basic jQuery implementation of picture-cycling
 - `backbone-1`: blunt Backbone version of jQuery pic-swapping
 - `backbone-2`: Backbone with client-side templating
+
+## Usage
+
+Install:
+```sh
+git clone git@github.com:tdumitrescu/rails-backbone-view-example.git
+cd rails-backbone-view-example/
+bundle install
+```
+
+Run server:
+```sh
+bundle exec rails s
+```
+
+Cycle through cute capybaras: [http://localhost:3000/](http://localhost:3000/)
+
+Switch branches to load the different front end versions. `master` has the final Backbone implementation.
